@@ -55,7 +55,7 @@ public class LocalTccTransactionStarter {
         tccActionTwo = (TccActionTwoImpl) applicationContext.getBean("tccActionTwo");
 
         //分布式事务提交demo
-        transactionCommitDemo();
+//        transactionCommitDemo();
 
         //分布式事务回滚demo
         transactionRollbackDemo();

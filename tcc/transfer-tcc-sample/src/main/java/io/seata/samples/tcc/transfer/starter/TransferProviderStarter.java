@@ -16,7 +16,7 @@ public class TransferProviderStarter {
 
     public static void main(String[] args) throws Exception {
         //mock zk server
-        mockZKServer();
+//        mockZKServer();
 
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
             new String[] {"spring/seata-tcc.xml", "spring/seata-dubbo-provider.xml",
@@ -29,10 +29,10 @@ public class TransferProviderStarter {
         new ApplicationKeeper(applicationContext).keep();
     }
 
-    private static void mockZKServer() throws Exception {
+    /*private static void mockZKServer() throws Exception {
         //Mock zk server，作为 transfer 配置中心
         server = new TestingServer(2181, true);
         server.start();
-    }
+    }*/
 
 }
